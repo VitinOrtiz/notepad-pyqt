@@ -1,0 +1,23 @@
+{
+    "app-locale": "en",
+    "app-name": "Notepad",
+    "about-logo": "img/windows-logo-300.png",
+    "about-icon": "img/notepad-icon-32.png",
+    "datetime-format": "%I:%M %p %m/%d/%Y",
+    "file-name": "Untitled",
+    "file-encoding": "utf-8",
+    "file-extension": "*.txt",
+    "file-dialog-directory": "~/Documents",
+    "file-dialog-filters": "Text Documents(*.txt);;All Files(*.*)",
+    "font-ui-families": ["Segoe UI", "Arial"],
+    "font-ui-size": 10,
+    "font-ui-weight": 0,
+    "font-ui-italic": false,
+    "help-view": "https://www.bing.com/search?q=get+help+with+notepad+in+windows",
+    "window-icon": "img/notepad-icon-16.png",
+    "window-title": "[*]{file} - {app}",
+    "zoom-factor": 10,
+    "zoom-restore": 100,
+    "zoom-min": 10,
+    "zoom-max": 500
+}

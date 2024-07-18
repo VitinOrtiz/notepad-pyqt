@@ -1,0 +1,287 @@
+{
+    "iconset": "img/fugue-icons-3.5.6/",
+    "menubar": [
+    {
+        "type": "menu",
+        "text": "&File",
+        "children": [
+        {
+            "type": "action",
+            "text": "&New",
+            "icon": "document--plus.png",
+            "shortcut": "Ctrl+n",
+            "status-tip": "Create a new text file",
+            "slot": "newFile"
+        },
+        {
+            "type": "action",
+            "text": "&New Window",
+            "icon": "application--plus.png",
+            "shortcut": "Ctrl+Shift+n",
+            "status-tip": "Create a new Notepad window",
+            "slot": "newWindow"
+        },
+        {
+            "type": "action",
+            "text": "&Open...",
+            "icon": "folder-open-document-text.png",
+            "shortcut": "Ctrl+o",
+            "status-tip": "Open a text file",
+            "slot": "open"
+        },
+        {
+            "type": "action",
+            "text": "&Save",
+            "icon": "disk.png",
+            "shortcut": "Ctrl+s",
+            "status-tip": "Save file as is",
+            "slot": "save"
+        },
+        {
+            "type": "action",
+            "text": "Save &As",
+            "icon": "disk-rename.png",
+            "shortcut": "Ctrl+Shift+s",
+            "status-tip": "Save file with a different name",
+            "slot": "saveAs"
+        },
+        {
+            "type": "separator"
+        },
+        {
+            "type": "action",
+            "text": "Page Set&up...",
+            "icon": "document-resize.png",
+            "shortcut": "",
+            "status-tip": "Configure page size and margins",
+            "slot": "showPageSetupDialog"
+        },
+        {
+            "type": "action",
+            "text": "&Print...",
+            "icon": "printer.png",
+            "shortcut": "Ctrl+p",
+            "status-tip": "Print file",
+            "slot": "showPrintDialog"
+        },
+        {
+            "type": "separator"
+        },
+        {
+            "type": "action",
+            "text": "E&xit",
+            "icon": "cross-button.png",
+            "shortcut": "Ctrl+q",
+            "status-tip": "Exit application",
+            "slot": "exitApplication"
+        }
+        ]
+    },
+    {
+        "type": "menu",
+        "text": "&Edit",
+        "children": [
+        {
+            "type": "action",
+            "text": "&Undo",
+            "icon": "arrow-curve-180-left.png",
+            "shortcut": "Ctrl+z",
+            "status-tip": "Undoes the last change",
+            "slot": "undo"
+        },
+        {
+            "type": "action",
+            "text": "&Redo",
+            "icon": "arrow-curve.png",
+            "shortcut": "Ctrl+y",
+            "status-tip": "Redoes the last change",
+            "slot": "redo"
+        },
+        {
+            "type": "separator"
+        },
+        {
+            "type": "action",
+            "text": "Cu&t",
+            "icon": "scissors.png",
+            "shortcut": "Ctrl+x",
+            "status-tip": "Copies the selected text to the clipboard and deletes it from the file",
+            "slot": "cut"
+        },
+        {
+            "type": "action",
+            "text": "&Copy",
+            "icon": "document-copy.png",
+            "shortcut": "Ctrl+c",
+            "status-tip": "Copies any selected text to the clipboard",
+            "slot": "copy"
+        },
+        {
+            "type": "action",
+            "text": "&Paste",
+            "icon": "clipboard-paste.png",
+            "shortcut": "Ctrl+v",
+            "status-tip": "Pastes the text from the clipboard into the file at the cursor position",
+            "slot": "paste"
+        },
+        {
+            "type": "action",
+            "text": "De&lete",
+            "icon": "cross.png",
+            "shortcut": "Del",
+            "status-tip": "Deletes selected text",
+            "slot": "delete"
+        },
+        {
+            "type": "separator"
+        },
+        {
+            "type": "action",
+            "text": "&Find...",
+            "icon": "binocular.png",
+            "shortcut": "Ctrl+f",
+            "status-tip": "Finds a string in the file",
+            "slot": "showFindDialog"
+        },
+        {
+            "type": "action",
+            "text": "Find &Next",
+            "icon": "arrow-stop-180.png",
+            "shortcut": "F3",
+            "status-tip": "Finds the next occurrence of the string using the given options",
+            "slot": "findNext"
+        },
+        {
+            "type": "action",
+            "text": "Find &Previous",
+            "icon": "arrow-stop.png",
+            "shortcut": "Shift+F3",
+            "status-tip": "Finds the previous occurrence of the string using the given options",
+            "slot": "findPrevious"
+        },
+        {
+            "type": "action",
+            "text": "&Replace...",
+            "icon": "edit-replace.png",
+            "shortcut": "Ctrl+h",
+            "status-tip": "",
+            "slot": "showReplaceDialog"
+        },
+        {
+            "type": "action",
+            "text": "&Go To...",
+            "icon": "arrow-stop-270.png",
+            "shortcut": "Ctrl+g",
+            "status-tip": "Go to specific line in file",
+            "slot": "goTo"
+        },
+        {
+            "type": "separator"
+        },
+        {
+            "type": "action",
+            "text": "Select &All",
+            "icon": "ui-text-field-select.png",
+            "shortcut": "Ctrl+a",
+            "status-tip": "Selects all text in file",
+            "slot": "selectAll"
+        },
+        {
+            "type": "action",
+            "text": "Time/&Date",
+            "icon": "calendar-select.png",
+            "shortcut": "F5",
+            "status-tip": "Insert Time/Date in text",
+            "slot": "insertDateTime"
+        }
+        ]
+    },
+    {
+        "type": "menu",
+        "text": "&Format",
+        "children": [
+        {
+            "type": "action",
+            "text": "&Word Wrap",
+            "status-tip": "Enable or disable word wrap on text editor",
+            "slot": "toggleWordWrap",
+            "checkable": true,
+            "checked": true
+        },
+        {
+            "type": "action",
+            "text": "&Font...",
+            "icon": "edit.png",
+            "status-tip": "Show font options",
+            "slot": "showFontDialog"
+        }
+        ]
+    },
+    {
+        "type": "menu",
+        "text": "&View",
+        "children": [
+        {
+            "type": "menu",
+            "text": "&Zoom",
+            "icon": "magnifier-zoom.png",
+            "children": [
+            {
+                "type": "action",
+                "text": "Zoom &In",
+                "icon": "magnifier-zoom-in.png",
+                "shortcut": "Ctrl+=",
+                "status-tip": "Increase zoom by 10%",
+                "slot": "zoomIn"
+            },
+            {
+                "type": "action",
+                "text": "Zoom &Out",
+                "icon": "magnifier-zoom-out.png",
+                "shortcut": "Ctrl+-",
+                "status-tip": "Reduce zoom by 10%",
+                "slot": "zoomOut"
+            },
+            {
+                "type": "action",
+                "text": "&Restore Default Zoom",
+                "icon": "magnifier-zoom-fit.png",
+                "shortcut": "Ctrl+0",
+                "status-tip": "Restore zoom to 100%",
+                "slot": "restoreZoom"
+            }
+            ]
+        },
+        {
+            "type": "action",
+            "text": "&Status Bar",
+            "status-tip": "Show/Hide the status bar",
+            "slot": "toggleStatusBar",
+            "checkable": true,
+            "checked": true
+        }
+        ]
+    },
+    {
+        "type": "menu",
+        "text": "&Help",
+        "children": [
+        {
+            "type": "action",
+            "text": "View &Help",
+            "icon": "question-frame.png",
+            "slot": "viewHelp"
+        },
+        {
+            "type": "separator"
+        },
+        {
+            "type": "action",
+            "text": "&About Notepad",
+            "icon": "information-white.png",
+            "slot": "about"
+        }       
+        ]
+    }
+    ]
+}
